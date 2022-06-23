@@ -14,6 +14,7 @@ const StyledHeader = styled.header`
 export const ModsenHealth = styled.div`
 	margin-right: 294px;
 	display: flex;
+	align-items: center;
 	#wind-icon {
 		height: 24px;
 		width: 24px;
@@ -34,16 +35,17 @@ export const NavBar = styled.nav`
 		li {
 			margin-right: 45px;
 		}
+		li:last-of-type {
+			margin-right: 0px;
+		}
 	}
 `
 
 export const Auth = styled.div`
 	display: flex;
 	margin-left: 181px;
-	button {
-		margin-left: 83px;
-	}
-	button:hover {
+	button:last-of-type {
+		margin-left: 40px;
 		width: 146px;
 		height: 52px;
 		background: #215ee9;
@@ -54,6 +56,11 @@ export const Auth = styled.div`
 			0px 8.14815px 13.1185px rgba(33, 94, 233, 0.0314074),
 			0px 1.85185px 6.33565px rgba(33, 94, 233, 0.0192593);
 		border-radius: 40px;
+		text-align: center;
+
+		color: #ffffff;
+	}
+	button:hover {
 	}
 `
 export const Bell = styled.div`

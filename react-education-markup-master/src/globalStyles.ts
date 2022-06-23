@@ -48,7 +48,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body{
-    background-color: #E5E5E5;
+    background-color: #EBF1FF;
   }
 
   a{

@@ -55,6 +55,9 @@ export const Form = styled.form`
 		font-size: 16px;
 		line-height: 19px;
 	}
+	input:focus {
+		outline: none;
+	}
 	button {
 		width: 180px;
 		height: 50px;
