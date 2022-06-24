@@ -1,9 +1,13 @@
 import styled, { createGlobalStyle } from 'styled-components'
-
 import reset from 'styled-reset'
+
+import fonts from './fonts'
+import variables from './variables'
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
+  ${fonts}
+  ${variables}
   button{   
         background: none repeat scroll 0 0 transparent;
         border: medium none;
@@ -20,32 +24,8 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
         text-indent: 0;
       }
-:root{
-  --blue:#215EE9,
-  --grey:#7D8790,
-  --black-primary:#000000,
-  --black-secondary:#333333
-}
-  @font-face{
-    font-family: 'Roboto-Regular';
-    src: 
-    url('./assets/fonts/Roboto400/Roboto-Regular.woff2') format('woff2'),
-   
-    url('./assets/fonts/Roboto400/Roboto-Regular.woff') format('woff'),
-    ;
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face{
-    font-family: 'Roboto';
-    src: local('Roboto-Bold')
-    url('./assets/fonts/Roboto700/Roboto-Bold.woff2') format('woff2'),
-    url('./assets/fonts/Roboto700/Roboto-Bold.ttf') format('truetype'),
-    url('./assets/fonts/Roboto700/Roboto-Bold.woff') format('woff'),
-    ;
-    font-weight: 700;
-    font-style: normal;
-  }
+
+  
 
   body{
     background-color: #EBF1FF;

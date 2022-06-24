@@ -11,8 +11,9 @@ export const Info = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin-top: 97px;
+	color: var(--blue);
 	h2 {
-		font-family: Roboto-Bold;
+		font-family: 'Roboto-Bold';
 		font-size: 65px;
 		line-height: 66px;
 		color: var(--blue);
@@ -20,7 +21,7 @@ export const Info = styled.div`
 		margin-bottom: 30px;
 	}
 	h5 {
-		font-family: Roboto-Bold;
+		font-family: 'Roboto-Bold';
 		font-size: 14px;
 		line-height: 24px;
 		color: var(--blue);
