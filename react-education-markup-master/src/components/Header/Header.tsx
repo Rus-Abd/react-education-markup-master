@@ -1,4 +1,5 @@
 import React from 'react'
+import Hamburger from '../Hamburger/Hamburger'
 import StyledHeader, { Auth, Bell, ModsenHealth, NavBar } from './styled'
 
 function Header() {
@@ -27,6 +28,7 @@ function Header() {
 					</li>
 				</ul>
 			</NavBar>
+			<Hamburger />
 			<Auth>
 				<button type='button'>Log In</button>
 				<button type='button'>Register</button>

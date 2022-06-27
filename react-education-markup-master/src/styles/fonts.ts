@@ -10,20 +10,21 @@ import robotoRegularwoff2 from '../assets/fonts/Roboto400/Roboto-Regular.woff2'
 
 const fonts = css`
 	@font-face {
-		font-family: 'Roboto-Regular';
-		src: url(${robotoRegularwoff2}) format('woff2'),
-			url(${robotoRegularttf}) format('truetype'),
-			url(${robotoRegularwoff}) format('woff');
-		font-weight: 400;
-		font-style: normal;
-	}
-	@font-face {
-		font-family: 'Roboto-Bold';
-		src: local('Roboto-Bold') url(${robotoBoldwoff2}) format('woff2'),
+		font-family: 'Roboto Bold';
+		src: url(${robotoBoldwoff2}) format('woff2'),
 			url(${robotoBoldttf}) format('truetype'),
 			url(${robotoBoldwoff}) format('woff');
 		font-weight: 700;
 		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Roboto Regular';
+		src: url(${robotoRegularttf}) format('truetype'),
+			url(${robotoRegularwoff2}) format('woff2'),
+			url(${robotoRegularwoff}) format('woff');
+		font-weight: 400;
+		font-style: normal;
+		font-display: auto;
 	}
 `
 export default fonts

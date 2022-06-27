@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
         border-spacing: 0;
         color: #26589F;
         font-family: 'PT Sans Narrow',sans-serif;
-        font-size: 16px;
+        font-size: var(--x2);
         font-weight: normal;
         line-height: 1.42rem;
         list-style: none outside none;
@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
         text-indent: 0;
       }
 
-  
+
 
   body{
     background-color: #EBF1FF;
@@ -33,15 +33,21 @@ const GlobalStyles = createGlobalStyle`
 
   a{
     text-decoration: none;
-    font-family: 'Roboto-Bold'; 
-    font-size: 16px;
+    font-family: 'Roboto Regular'; 
+    font-size: var(--x2);
     line-height: 19px;
     color: var(--grey);
   }
+  button{font-family: 'Roboto Bold'; }
 `
 export const Container = styled.div`
 	margin: 0 73px 0px 151px;
 	width: 1374px;
+	@media (max-width: 640px) {
+		margin: 0px;
+		width: 100%;
+		overflow: hidden;
+	}
 `
 
 export default GlobalStyles

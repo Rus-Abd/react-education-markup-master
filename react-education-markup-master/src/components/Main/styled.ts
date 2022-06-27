@@ -5,6 +5,9 @@ import bodyImg from '../../assets/images/body-background.webp'
 
 const MainContainer = styled.main`
 	display: flex;
+	@media (max-width: 640px) {
+		flex-direction: column-reverse;
+	}
 `
 
 export const Info = styled.div`
@@ -13,26 +16,33 @@ export const Info = styled.div`
 	margin-top: 97px;
 	color: var(--blue);
 	h2 {
-		font-family: 'Roboto-Bold';
+		font-family: 'Roboto Bold';
 		font-size: 65px;
 		line-height: 66px;
+		letter-spacing: -0.01em;
 		color: var(--blue);
 		max-width: 543px;
 		margin-bottom: 30px;
 	}
 	h5 {
-		font-family: 'Roboto-Bold';
+		font-family: 'Roboto Bold';
 		font-size: 14px;
 		line-height: 24px;
 		color: var(--blue);
 		margin-bottom: 19px;
 	}
 	p {
+		font-family: 'Roboto Regular';
 		font-size: 20px;
 		line-height: 30px;
 		color: var(--blue);
-		max-width: 520px;
+		max-width: 522px;
 		margin-bottom: 52px;
+		opacity: 0.7;
+	}
+	@media (max-width: 640px) {
+		margin-top: 0px;
+		margin-left: 39px;
 	}
 `
 export const Form = styled.form`
@@ -80,28 +90,45 @@ export const Stats = styled.ul`
 	display: flex;
 	margin-top: 119px;
 	li {
+		max-width: 163px;
+		display: flex;
+		flex-direction: column;
 		margin-right: 78px;
-		max-width: 142px;
 		span {
 			font-size: 56px;
 			line-height: 66px;
 			letter-spacing: -4px;
 			color: #333333;
 			margin-bottom: 13px;
+			font-family: 'Roboto Bold';
 		}
 		p {
 			font-size: 16px;
 			line-height: 24px;
 			color: #000000;
+			font-family: 'Roboto Regular';
 		}
+	}
+	li:nth-of-type(2) {
+		margin-right: 71px;
+	}
+	li:last-of-type {
+		margin-right: 0px;
+	}
+	@media (max-width: 640px) {
+		display: none;
 	}
 `
 export const Img = styled.img.attrs({
 	src: bodyImg,
 })`
-	width: 740px;
-	height: 885px;
+	margin-top: -143px;
+	margin-left: 72px;
 	filter: drop-shadow(50px -56px 104px rgba(28, 91, 235, 0.05));
+	@media (max-width: 640px) {
+		margin-top: 50px;
+		margin-left: 0px;
+	}
 `
 
 export default MainContainer

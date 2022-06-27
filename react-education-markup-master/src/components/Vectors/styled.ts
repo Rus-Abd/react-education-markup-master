@@ -13,6 +13,9 @@ const LowerLeftVectors = styled.div`
 	top: 732px;
 	background: url(${lowervectors}) no-repeat;
 	z-index: -10;
+	@media (max-width: 640px) {
+		display: none;
+	}
 `
 export const UpperRightVectors = styled.div`
 	position: absolute;
@@ -22,6 +25,9 @@ export const UpperRightVectors = styled.div`
 	top: 54px;
 	background: url(${uppervectors}) no-repeat;
 	z-index: -10;
+	@media (max-width: 640px) {
+		display: none;
+	}
 `
 export const UpperBodyVector = styled.div`
 	position: absolute;
@@ -31,6 +37,9 @@ export const UpperBodyVector = styled.div`
 	top: 255px;
 	background: url(${upperBodyVector}) no-repeat;
 	z-index: -10;
+	@media (max-width: 640px) {
+		display: none;
+	}
 `
 export const BodyVector = styled.div`
 	position: absolute;
@@ -40,6 +49,13 @@ export const BodyVector = styled.div`
 	top: 514.29px;
 	background: url(${bodyVector}) no-repeat;
 	z-index: -10;
+	@media (max-width: 640px) {
+		height: 970.2379670677133px;
+		width: 1205.915043339168px;
+		left: -458px;
+		top: 172.05157470703125px;
+		border-radius: 123px;
+	}
 `
 
 export default LowerLeftVectors

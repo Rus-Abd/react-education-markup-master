@@ -1,15 +1,21 @@
 import styled from 'styled-components'
 
 import windSvg from '../../assets/icons/wind.svg'
+import windSvg320 from '../../assets/icons/wind320px.svg'
 import notificationSvg from '../../assets/icons/notification.svg'
 
 const StyledHeader = styled.header`
 	display: flex;
-	background-color: tan;
+
 	height: 53px;
 	margin-top: 149px;
 	display: flex;
 	align-items: center;
+	@media (max-width: 640px) {
+		margin-top: 20px;
+		width: 100%;
+		height: 34px;
+	}
 `
 export const ModsenHealth = styled.div`
 	margin-right: 294px;
@@ -22,22 +28,43 @@ export const ModsenHealth = styled.div`
 		margin-right: 10px;
 	}
 	span {
-		font-family: 'Roboto-Bold';
+		font-family: 'Roboto Bold';
 		font-size: 16px;
-		line-height: 19px;
+		line-height: 24px;
 		color: var(--grey);
+	}
+	@media (max-width: 640px) {
+		margin-left: 16px;
+		#wind-icon {
+			background-image: url(${windSvg320});
+			height: 32px;
+
+			margin-right: 10px;
+		}
 	}
 `
 export const NavBar = styled.nav`
 	display: flex;
 	ul {
 		display: flex;
+		width: 442px;
+		justify-content: space-between;
 		li {
-			margin-right: 45px;
+			position: relative;
 		}
 		li:last-of-type {
 			margin-right: 0px;
 		}
+		li:hover:after {
+			position: absolute;
+			top: 11px;
+			width: 7px;
+			height: 7px;
+			background: #215ee9;
+		}
+	}
+	@media (max-width: 640px) {
+		display: none;
 	}
 `
 
@@ -60,7 +87,8 @@ export const Auth = styled.div`
 
 		color: #ffffff;
 	}
-	button:hover {
+	@media (max-width: 640px) {
+		display: none;
 	}
 `
 export const Bell = styled.div`
@@ -68,6 +96,9 @@ export const Bell = styled.div`
 	width: 22px;
 	background-image: url(${notificationSvg});
 	margin-left: 60px;
+	@media (max-width: 640px) {
+		display: none;
+	}
 `
 
 export default StyledHeader
