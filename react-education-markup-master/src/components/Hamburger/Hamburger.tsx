@@ -3,20 +3,22 @@ import Burger, { BurgerNav } from './styled'
 
 function Hamburger() {
 	const [viewNav, setViewNav] = useState(false)
-	const handleBurgerClick = () => () => {
+	const handleBurgerClick = () => {
+		console.log('aa')
 		setViewNav(true)
 	}
-	const handleNavClick = (e: MouseEvent) => {
+	const handleNavClick = (e: React.MouseEvent) => {
 		const type = (e.target as HTMLElement).tagName
-		if (type === 'LI') {
+		if (type === 'A') {
 			setViewNav(false)
+			console.log('xxx')
 		}
 	}
 	return (
 		<>
 			<Burger onClick={handleBurgerClick} />
 			{viewNav ? (
-				<BurgerNav onClick={e => handleNavClick(e)}>
+				<BurgerNav onClick={e => handleNavClick(e)} showNav={viewNav}>
 					<li>
 						<a href='#'>Home</a>
 					</li>

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import mailSvg from '../../assets/icons/mail.svg'
-import bodyImg from '../../assets/images/body-background.webp'
+import bodyImg from '../../assets/images/body-background320.png'
 
 const MainContainer = styled.main`
 	display: flex;
@@ -41,7 +41,7 @@ export const Info = styled.div`
 		opacity: 0.7;
 	}
 	@media (max-width: 640px) {
-		margin-top: 0px;
+		margin-top: -44px;
 		margin-left: 39px;
 	}
 `
@@ -126,8 +126,9 @@ export const Img = styled.img.attrs({
 	margin-left: 72px;
 	filter: drop-shadow(50px -56px 104px rgba(28, 91, 235, 0.05));
 	@media (max-width: 640px) {
-		margin-top: 50px;
-		margin-left: 0px;
+		margin-top: 46px;
+		margin-left: 3px;
+		margin-right: -14px;
 	}
 `
 

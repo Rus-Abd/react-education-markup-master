@@ -38,7 +38,10 @@ const GlobalStyles = createGlobalStyle`
     line-height: 19px;
     color: var(--grey);
   }
-  button{font-family: 'Roboto Bold'; }
+  button{
+    font-family: 'Roboto Bold';
+    cursor: pointer;
+   }
 `
 export const Container = styled.div`
 	margin: 0 73px 0px 151px;

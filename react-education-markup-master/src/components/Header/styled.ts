@@ -34,12 +34,16 @@ export const ModsenHealth = styled.div`
 		color: var(--grey);
 	}
 	@media (max-width: 640px) {
+		justify-content: flex-start;
 		margin-left: 16px;
+		margin-right: 432px;
 		#wind-icon {
 			background-image: url(${windSvg320});
 			height: 32px;
-
 			margin-right: 10px;
+		}
+		span {
+			padding-bottom: 3px;
 		}
 	}
 `

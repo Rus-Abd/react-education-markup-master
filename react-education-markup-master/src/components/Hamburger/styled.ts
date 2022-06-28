@@ -2,23 +2,36 @@ import styled from 'styled-components'
 
 import hamburger from '../../assets/icons/hamburger.svg'
 
+type navProps = {
+	showNav: Boolean
+}
+
 const Burger = styled.button`
 	display: none;
 	width: 32px;
 	height: 32px;
-	justify-content: space-between;
-	flex-direction: column;
-	background-image: url(${hamburger}) no-repeat center;
+	cursor: pointer;
+	background-image: url(${hamburger});
 	@media (max-width: 640px) {
 		display: inline-block;
 	}
 `
 export const BurgerNav = styled.ul`
-	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	@media (max-width: 640px) {
-		display: flex;
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: space-evenly;
+	transform: translateX(${(props: navProps) => (props.showNav ? '0' : '100vw')});
+	z-index: 99;
+	a:hover {
+		color: var(--blue);
 	}
 `
 
