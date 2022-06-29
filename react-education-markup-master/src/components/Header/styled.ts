@@ -50,12 +50,14 @@ export const ModsenHealth = styled.div`
 export const NavBar = styled.nav`
 	display: flex;
 	ul {
+		padding-top: 16px;
 		display: flex;
 		width: 442px;
 		justify-content: space-between;
 		li {
 			display: flex;
 			flex-direction: column;
+			align-items: center;
 			span {
 				opacity: 0;
 				margin-top: 11px;
@@ -63,7 +65,6 @@ export const NavBar = styled.nav`
 				height: 7px;
 				border-radius: 50%;
 				background-color: var(--blue);
-				align-self: center;
 			}
 		}
 		li:hover {
