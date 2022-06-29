@@ -2,6 +2,7 @@ import React from 'react'
 import Hamburger from '../Hamburger/Hamburger'
 import StyledHeader, { Auth, Bell, ModsenHealth, NavBar } from './styled'
 
+const navList = ['Home', 'Services', 'Clinic', 'Doctors', 'Contact']
 function Header() {
 	return (
 		<StyledHeader>
@@ -11,21 +12,11 @@ function Header() {
 			</ModsenHealth>
 			<NavBar>
 				<ul>
-					<li>
-						<a href='#'>Home</a>
-					</li>
-					<li>
-						<a href='#'>Services</a>
-					</li>
-					<li>
-						<a href='#'>Clinic</a>
-					</li>
-					<li>
-						<a href='#'>Doctors</a>
-					</li>
-					<li>
-						<a href='#'>Contact </a>
-					</li>
+					{navList.map(el => (
+						<li>
+							<a href='#'>{el}</a>
+						</li>
+					))}
 				</ul>
 			</NavBar>
 			<Hamburger />
