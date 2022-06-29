@@ -54,17 +54,25 @@ export const NavBar = styled.nav`
 		width: 442px;
 		justify-content: space-between;
 		li {
-			position: relative;
+			display: flex;
+			flex-direction: column;
+			span {
+				opacity: 0;
+				margin-top: 11px;
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				background-color: var(--blue);
+				align-self: center;
+			}
+		}
+		li:hover {
+			span {
+				opacity: 1;
+			}
 		}
 		li:last-of-type {
 			margin-right: 0px;
-		}
-		li:hover:after {
-			position: absolute;
-			top: 11px;
-			width: 7px;
-			height: 7px;
-			background: #215ee9;
 		}
 	}
 	@media (max-width: 640px) {

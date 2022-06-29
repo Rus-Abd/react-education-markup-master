@@ -15,6 +15,7 @@ function Header() {
 					{navList.map(el => (
 						<li>
 							<a href='#'>{el}</a>
+							<span />
 						</li>
 					))}
 				</ul>
