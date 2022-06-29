@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
   ${reset}
   ${fonts}
   ${variables}
+  *{box-sizing:border-box;}
   button{   
         background: none repeat scroll 0 0 transparent;
         border: medium none;
@@ -38,6 +39,9 @@ const GlobalStyles = createGlobalStyle`
     line-height: 19px;
     color: var(--grey);
   }
+  a:hover {
+		color: var(--blue);
+	}
   button{
     font-family: 'Roboto Bold';
     cursor: pointer;

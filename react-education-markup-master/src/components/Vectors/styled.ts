@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-import lowervectors from '../../assets/images/lowerLeftVectors.png'
-import uppervectors from '../../assets/images/upperRightVectors.png'
-import upperBodyVector from '../../assets/images/upperBodyVector.png'
-import bodyVector from '../../assets/images/bodyVector.png'
+import lowervectors from '@images/lowerLeftVectors.png'
+import uppervectors from '@images/upperRightVectors.png'
+import upperBodyVector from '@images/upperBodyVector.png'
+import bodyVector from '@images/bodyVector.png'
 
 const LowerLeftVectors = styled.div`
 	position: absolute;

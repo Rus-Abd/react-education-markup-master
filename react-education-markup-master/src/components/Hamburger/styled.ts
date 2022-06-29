@@ -30,9 +30,6 @@ export const BurgerNav = styled.ul`
 	justify-content: space-evenly;
 	transform: translateX(${(props: navProps) => (props.showNav ? '0' : '100vw')});
 	z-index: 99;
-	a:hover {
-		color: var(--blue);
-	}
 `
 
 export default Burger

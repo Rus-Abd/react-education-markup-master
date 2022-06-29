@@ -1,12 +1,12 @@
 import { css } from 'styled-components/macro'
 
-import robotoBoldttf from '../assets/fonts/Roboto700/Roboto-Bold.ttf'
-import robotoBoldwoff from '../assets/fonts/Roboto700/Roboto-Bold.woff'
-import robotoBoldwoff2 from '../assets/fonts/Roboto700/Roboto-Bold.woff2'
+import robotoBoldttf from '@fonts/Roboto700/Roboto-Bold.ttf'
+import robotoBoldwoff from '@fonts/Roboto700/Roboto-Bold.woff'
+import robotoBoldwoff2 from '@fonts/Roboto700/Roboto-Bold.woff2'
 
-import robotoRegularttf from '../assets/fonts/Roboto400/Roboto-Regular.ttf'
-import robotoRegularwoff from '../assets/fonts/Roboto400/Roboto-Regular.woff'
-import robotoRegularwoff2 from '../assets/fonts/Roboto400/Roboto-Regular.woff2'
+import robotoRegularttf from '@fonts/Roboto400/Roboto-Regular.ttf'
+import robotoRegularwoff from '@fonts/Roboto400/Roboto-Regular.woff'
+import robotoRegularwoff2 from '@fonts/Roboto400/Roboto-Regular.woff2'
 
 const fonts = css`
 	@font-face {

@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import windSvg from '../../assets/icons/wind.svg'
-import windSvg320 from '../../assets/icons/wind320px.svg'
-import notificationSvg from '../../assets/icons/notification.svg'
+import windSvg from '@assets/icons/wind.svg'
+import windSvg320 from '@assets/icons/wind320px.svg'
+import notificationSvg from '@assets/icons/notification.svg'
 
 const StyledHeader = styled.header`
 	display: flex;
@@ -31,7 +31,7 @@ export const ModsenHealth = styled.div`
 		font-family: 'Roboto Bold';
 		font-size: 16px;
 		line-height: 24px;
-		color: var(--grey);
+		color: var(--black-primary);
 	}
 	@media (max-width: 640px) {
 		justify-content: flex-start;
