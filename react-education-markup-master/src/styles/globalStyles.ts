@@ -34,14 +34,12 @@ const GlobalStyles = createGlobalStyle`
 
   a{
     text-decoration: none;
-    font-family: 'Roboto Regular'; 
+    font-family: 'Roboto Bold'; 
     font-size: var(--x2);
     line-height: 19px;
     color: var(--grey);
   }
-  a:hover {
-		color: var(--blue);
-	}
+ 
   button{
     font-family: 'Roboto Bold';
     cursor: pointer;

@@ -71,6 +71,9 @@ export const NavBar = styled.nav`
 			span {
 				opacity: 1;
 			}
+			a {
+				color: var(--blue);
+			}
 		}
 		li:last-of-type {
 			margin-right: 0px;
