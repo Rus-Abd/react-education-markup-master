@@ -53,6 +53,7 @@ export const BodyVector = styled.div`
 export const BodyBlur = styled.img.attrs({
 	srcSet: bodyBlurWebp,
 	src: bodyBlur,
+	alt: 'blur',
 })`
 	position: absolute;
 	width: 725px;

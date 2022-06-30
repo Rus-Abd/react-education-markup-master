@@ -134,9 +134,8 @@ export const Img = styled.img.attrs({
 	srcSet: srcsetImgs,
 	sizes: srcsetSizes,
 	src: bodyImg,
+	alt: 'Athlete image',
 })`
-	/* margin-top: -143px;
-	margin-left: 72px; */
 	width: 740px;
 	height: 885px;
 	filter: drop-shadow(50px -56px 104px rgba(28, 91, 235, 0.05));
@@ -144,9 +143,6 @@ export const Img = styled.img.attrs({
 		height: 895px;
 		width: 640px;
 		margin-top: 46px;
-		/* margin-top: 46px;
-		margin-left: 3px;
-		margin-right: -14px; */
 	}
 `
 

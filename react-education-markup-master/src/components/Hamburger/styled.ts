@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import hamburger from '../../assets/icons/hamburger.svg'
+import hamburger from '@assets/icons/hamburger.svg'
 
 type navProps = {
 	showNav: Boolean

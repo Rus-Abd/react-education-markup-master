@@ -36,6 +36,7 @@
 				"ts": "never",
 				"tsx": "never"
 			}
-		]
+		],
+		"import/no-unused-modules": [1, { "unusedExports": true }]
 	}
 }
