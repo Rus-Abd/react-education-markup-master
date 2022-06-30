@@ -5,6 +5,7 @@ import uppervectors from '@images/upperRightVectors.png'
 import upperBodyVector from '@images/upperBodyVector.png'
 import bodyVector from '@images/bodyVector.png'
 import bodyBlur from '@images/bodyBlur.png'
+import bodyBlurWebp from '@images/bodyBlurWebp.webp'
 
 const LowerLeftVectors = styled.div`
 	position: absolute;
@@ -49,14 +50,16 @@ export const BodyVector = styled.div`
 		border-radius: 123px;
 	}
 `
-export const BodyBlur = styled.div`
+export const BodyBlur = styled.img.attrs({
+	srcSet: bodyBlurWebp,
+	src: bodyBlur,
+})`
 	position: absolute;
 	width: 725px;
 	height: 869px;
 	left: 852px;
 	top: 233px;
 	filter: blur(64px);
-	background: url(${bodyBlur});
 	opacity: 0.3;
 `
 export default LowerLeftVectors
