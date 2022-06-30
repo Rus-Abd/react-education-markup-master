@@ -14,7 +14,7 @@ const LowerLeftVectors = styled.div`
 	left: 0px;
 	top: 732px;
 	background: url(${lowervectors}) no-repeat;
-	z-index: -10;
+	z-index: 1;
 `
 export const UpperRightVectors = styled.div`
 	position: absolute;
@@ -23,7 +23,7 @@ export const UpperRightVectors = styled.div`
 	right: 0px;
 	top: 54px;
 	background: url(${uppervectors}) no-repeat;
-	z-index: -10;
+	z-index: 1;
 `
 export const UpperBodyVector = styled.div`
 	position: absolute;
@@ -32,7 +32,7 @@ export const UpperBodyVector = styled.div`
 	left: 917px;
 	top: 255px;
 	background: url(${upperBodyVector}) no-repeat;
-	z-index: -10;
+	z-index: 1;
 `
 export const BodyVector = styled.div`
 	position: absolute;
@@ -41,7 +41,7 @@ export const BodyVector = styled.div`
 	left: 674.91px;
 	top: 514.29px;
 	background: url(${bodyVector}) no-repeat;
-	z-index: -10;
+	z-index: 1;
 	@media (max-width: 768px) {
 		height: 970.2379670677133px;
 		width: 1205.915043339168px;

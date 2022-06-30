@@ -8,7 +8,10 @@ const GlobalStyles = createGlobalStyle`
   ${reset}
   ${fonts}
   ${variables}
-  *{box-sizing:border-box;}
+  *{
+    box-sizing:border-box;
+    z-index:10;
+   }
   button{   
         background: none repeat scroll 0 0 transparent;
         border: medium none;
