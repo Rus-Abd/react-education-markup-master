@@ -1,8 +1,15 @@
 import React from 'react'
 import Hamburger from '../Hamburger/Hamburger'
-import StyledHeader, { Auth, Bell, ModsenHealth, NavBar } from './styled'
+import StyledHeader, {
+	Auth,
+	Bell,
+	ModsenHealth,
+	NavBar,
+	NavItem,
+} from './styled'
 
 const navList = ['Home', 'Services', 'Clinic', 'Doctors', 'Contact']
+
 function Header() {
 	return (
 		<StyledHeader>
@@ -13,10 +20,10 @@ function Header() {
 			<NavBar>
 				<ul>
 					{navList.map(el => (
-						<li>
+						<NavItem>
 							<a href='#'>{el}</a>
 							<span />
-						</li>
+						</NavItem>
 					))}
 				</ul>
 			</NavBar>

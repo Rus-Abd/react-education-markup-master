@@ -29,7 +29,7 @@ export const BurgerNav = styled.ul`
 	align-items: center;
 	justify-content: space-evenly;
 	transform: translateX(${(props: navProps) => (props.showNav ? '0' : '100vw')});
-	z-index: 99;
+	z-index: 100;
 `
 
 export default Burger

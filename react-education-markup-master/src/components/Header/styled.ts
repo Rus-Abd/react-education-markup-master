@@ -54,33 +54,33 @@ export const NavBar = styled.nav`
 		display: flex;
 		width: 442px;
 		justify-content: space-between;
-		li {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			span {
-				opacity: 0;
-				margin-top: 11px;
-				width: 7px;
-				height: 7px;
-				border-radius: 50%;
-				background-color: var(--blue);
-			}
-		}
-		li:hover {
-			span {
-				opacity: 1;
-			}
-			a {
-				color: var(--blue);
-			}
-		}
-		li:last-of-type {
-			margin-right: 0px;
-		}
 	}
 	@media (max-width: 640px) {
 		display: none;
+	}
+`
+export const NavItem = styled.li`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	span {
+		opacity: 0;
+		margin-top: 11px;
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		background-color: var(--blue);
+	}
+	&:hover {
+		span {
+			opacity: 1;
+		}
+		a {
+			color: var(--blue);
+		}
+	}
+	&:last-of-type {
+		margin-right: 0px;
 	}
 `
 

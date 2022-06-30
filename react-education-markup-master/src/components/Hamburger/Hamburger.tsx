@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
 import Burger, { BurgerNav } from './styled'
 
+const navList = ['Home', 'Services', 'Clinic', 'Doctors', 'Contact']
+
 function Hamburger() {
 	const [viewNav, setViewNav] = useState(false)
 	const handleBurgerClick = () => {
-		console.log('aa')
 		setViewNav(true)
 	}
 	const handleNavClick = (e: React.MouseEvent) => {
 		const type = (e.target as HTMLElement).tagName
 		if (type === 'A') {
 			setViewNav(false)
-			console.log('xxx')
 		}
 	}
 	return (
@@ -19,21 +19,11 @@ function Hamburger() {
 			<Burger onClick={handleBurgerClick} />
 			{viewNav ? (
 				<BurgerNav onClick={e => handleNavClick(e)} showNav={viewNav}>
-					<li>
-						<a href='#'>Home</a>
-					</li>
-					<li>
-						<a href='#'>Services</a>
-					</li>
-					<li>
-						<a href='#'>Clinic</a>
-					</li>
-					<li>
-						<a href='#'>Doctors</a>
-					</li>
-					<li>
-						<a href='#'>Contact</a>
-					</li>
+					{navList.map(el => (
+						<li>
+							<a href='#'>{el}</a>
+						</li>
+					))}
 				</BurgerNav>
 			) : null}
 		</>
