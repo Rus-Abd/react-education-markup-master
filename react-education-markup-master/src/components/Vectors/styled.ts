@@ -4,6 +4,7 @@ import lowervectors from '@images/lowerLeftVectors.png'
 import uppervectors from '@images/upperRightVectors.png'
 import upperBodyVector from '@images/upperBodyVector.png'
 import bodyVector from '@images/bodyVector.png'
+import bodyBlur from '@images/bodyBlur.png'
 
 const LowerLeftVectors = styled.div`
 	position: absolute;
@@ -13,9 +14,6 @@ const LowerLeftVectors = styled.div`
 	top: 732px;
 	background: url(${lowervectors}) no-repeat;
 	z-index: -10;
-	@media (max-width: 640px) {
-		display: none;
-	}
 `
 export const UpperRightVectors = styled.div`
 	position: absolute;
@@ -25,9 +23,6 @@ export const UpperRightVectors = styled.div`
 	top: 54px;
 	background: url(${uppervectors}) no-repeat;
 	z-index: -10;
-	@media (max-width: 640px) {
-		display: none;
-	}
 `
 export const UpperBodyVector = styled.div`
 	position: absolute;
@@ -37,9 +32,6 @@ export const UpperBodyVector = styled.div`
 	top: 255px;
 	background: url(${upperBodyVector}) no-repeat;
 	z-index: -10;
-	@media (max-width: 640px) {
-		display: none;
-	}
 `
 export const BodyVector = styled.div`
 	position: absolute;
@@ -49,7 +41,7 @@ export const BodyVector = styled.div`
 	top: 514.29px;
 	background: url(${bodyVector}) no-repeat;
 	z-index: -10;
-	@media (max-width: 640px) {
+	@media (max-width: 768px) {
 		height: 970.2379670677133px;
 		width: 1205.915043339168px;
 		left: -458px;
@@ -57,5 +49,14 @@ export const BodyVector = styled.div`
 		border-radius: 123px;
 	}
 `
-
+export const BodyBlur = styled.div`
+	position: absolute;
+	width: 725px;
+	height: 869px;
+	left: 852px;
+	top: 233px;
+	filter: blur(64px);
+	background: url(${bodyBlur});
+	opacity: 0.3;
+`
 export default LowerLeftVectors

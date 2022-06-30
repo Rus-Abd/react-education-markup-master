@@ -7,14 +7,10 @@ type navProps = {
 }
 
 const Burger = styled.button`
-	display: none;
 	width: 32px;
 	height: 32px;
 	cursor: pointer;
 	background-image: url(${hamburger});
-	@media (max-width: 640px) {
-		display: inline-block;
-	}
 `
 export const BurgerNav = styled.ul`
 	position: fixed;

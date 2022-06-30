@@ -11,10 +11,11 @@ const StyledHeader = styled.header`
 	margin-top: 149px;
 	display: flex;
 	align-items: center;
-	@media (max-width: 640px) {
+	@media (max-width: 768px) {
 		margin-top: 20px;
 		width: 100%;
 		height: 34px;
+		justify-content: space-between;
 	}
 `
 export const ModsenHealth = styled.div`
@@ -33,10 +34,10 @@ export const ModsenHealth = styled.div`
 		line-height: 24px;
 		color: var(--black-primary);
 	}
-	@media (max-width: 640px) {
+	@media (max-width: 768px) {
 		justify-content: flex-start;
 		margin-left: 16px;
-		margin-right: 432px;
+		margin-right: 0px;
 		#wind-icon {
 			background-image: url(${windSvg320});
 			height: 32px;
@@ -55,7 +56,7 @@ export const NavBar = styled.nav`
 		width: 442px;
 		justify-content: space-between;
 	}
-	@media (max-width: 640px) {
+	@media (max-width: 768px) {
 		display: none;
 	}
 `
@@ -103,16 +104,13 @@ export const Auth = styled.div`
 
 		color: #ffffff;
 	}
-	@media (max-width: 640px) {
-		display: none;
-	}
 `
 export const Bell = styled.div`
 	height: 22px;
 	width: 22px;
 	background-image: url(${notificationSvg});
 	margin-left: 60px;
-	@media (max-width: 640px) {
+	@media (max-width: 768px) {
 		display: none;
 	}
 `

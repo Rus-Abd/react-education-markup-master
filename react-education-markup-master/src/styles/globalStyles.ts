@@ -30,6 +30,7 @@ const GlobalStyles = createGlobalStyle`
 
   body{
     background-color: #EBF1FF;
+    overflow-x: hidden;
   }
 
   a{
@@ -48,10 +49,10 @@ const GlobalStyles = createGlobalStyle`
 export const Container = styled.div`
 	margin: 0 73px 0px 151px;
 	width: 1374px;
-	@media (max-width: 640px) {
+
+	@media (max-width: 768px) {
 		margin: 0px;
 		width: 100%;
-		overflow: hidden;
 	}
 `
 
